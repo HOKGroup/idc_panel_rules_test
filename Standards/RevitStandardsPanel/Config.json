@@ -1,0 +1,26 @@
+{
+  "StandardsConfig": [
+    {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/House",
+      "RvtFullPathRegex": 
+      [
+        "House\\.rvt$",
+        "\\\\House\\\\"
+      ]
+    },
+    {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/Library",
+      "RvtFullPathRegex": 
+      [
+        "Library\\.rvt$"
+      ]
+    },
+    {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/AllOtherFiles",
+      "RvtFullPathRegex": 
+      [
+        ".*"
+      ]
+    }
+  ]
+}
