@@ -66,11 +66,24 @@
         ["C", "Wall C", "Floor C", "Ceiling C"]
         ]
     },
-    {
-      "Rule Name": "Room Occupancy Load",
+      {
+    "Rule Name": "Set Room Occupant",
       "Categories": ["Rooms"],
-      "Parameter Name": "Occupancy Load",
-      "Formula": "{Occupancy Count} * {Area}"
+      "Parameter Name": "Occupant",
+      "Driven Parameters": ["OccupantLoadFactor"],
+      "Key Values": [
+        ["Assembly_Excercise_with_Equip_TX_21", "50"],
+        ["Assembly_Waiting_TX_21", "5"],
+        ["Business_TX_21", "50"],
+        ["Storage_TX_21", "40"],
+        ["Assembly_Excercise_with_out_Equip_TX_21", "15"],
+        ]
+    },
+    {
+      "Rule Name": "Room Occupannt Load Calculation",
+      "Categories": ["Rooms"],
+      "Parameter Name": "OccupantLoad",
+      "Formula": "{Area}/{OccupantLoadFactor}"
     },
     {
       "Rule Name": "In Place Family Quantity",
