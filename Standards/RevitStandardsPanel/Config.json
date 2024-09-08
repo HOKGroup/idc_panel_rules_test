@@ -9,10 +9,10 @@
       ]
     },
     {
-      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/000000_Demo_Projecty",
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/Demo",
       "RvtFullPathRegex": 
       [
-        "HOK_DEMO\\.rvt$"
+        "HOKDEMO\\.rvt$"
       ]
     },
     {
