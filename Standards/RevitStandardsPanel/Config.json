@@ -9,6 +9,13 @@
       ]
     },
     {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/000000_Demo_Projecty",
+      "RvtFullPathRegex": 
+      [
+        "HOK_DEMO\\.rvt$"
+      ]
+    },
+    {
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/Library",
       "RvtFullPathRegex": 
       [
@@ -19,7 +26,7 @@
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/AllOtherFiles",
       "RvtFullPathRegex": 
       [
-        ".*"
+        "Block\\.rvt$"
       ]
     }
   ]
