@@ -6,19 +6,19 @@
   [
     {
       "Categories": ["Furniture", "Entourage"],
-      "Workset": "Level 1 Stuff",
+      "Workset": "Level 1 Fitout",
       "Parameters":
       [
-        {"Name": "Level", "Value": "Level 1"},
+        {"Name": "Level", "Value": "01 - Entry Level"},
         {"Name": "Auto Assign Workset", "Value": "1"}
       ]
     },
     {
       "Categories": ["Furniture", "Entourage"],
-      "Workset": "Level 2 Stuff",
+      "Workset": "Level 2 Fitout",
       "Parameters":
       [
-        {"Name": "Level", "Value": "Level 2"},
+        {"Name": "Level", "Value": "02 - Floor"},
         {"Name": "Auto Assign Workset", "Value": "1"}
       ]
     }
