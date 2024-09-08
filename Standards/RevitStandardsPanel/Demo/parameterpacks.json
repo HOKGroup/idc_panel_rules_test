@@ -100,11 +100,11 @@
             "PDF":  "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
         },
         {
-            "Name": "Standard Room Demo",
+            "Name": "Room Style",
             "Category": "Rooms",
             "Parameters":
             [    
-                "Occupancy", "Name", "Number", "Room Style"
+               "Room Style"
             ],
             "Custom Tools":
             [
@@ -207,7 +207,7 @@
             ]
         },
         {
-            "Name": "Rooms Items",
+            "Name": "Room Demo",
             "Category": "Rooms",
             "Parameter Packs":
             [
