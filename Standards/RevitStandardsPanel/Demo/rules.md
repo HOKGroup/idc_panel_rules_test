@@ -56,7 +56,7 @@
       "User Message": "Type name does not match required format"
   },
   {
-    "Rule Name": "Room Finish Keys",
+    "Rule Name": "Set Room Style",
       "Categories": ["Rooms"],
       "Parameter Name": "Room Style",
       "Driven Parameters": ["Wall Finish", "Floor Finish", "Ceiling Finish"],
@@ -102,15 +102,6 @@
         {"name": "b", "description": ""},
         {"name": "c", "description": ""}
       ]
-    },
-    {
-      "Rule Name": "Cost is Number",
-      "User Message": "Cost must be a number",
-      "Categories": [
-        "<all>"
-      ],
-      "Parameter Name": "Cost",
-      "Regex": "^[0-9]+$|^$"
     },
     {
       "Rule Name": "Room Number Dup",
