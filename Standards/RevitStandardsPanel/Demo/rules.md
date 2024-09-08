@@ -104,15 +104,6 @@
       ]
     },
     {
-      "Rule Name": "Mark is Number",
-      "User Message": "Mark must be a number",
-      "Categories": [
-        "<all>"
-      ],
-      "Parameter Name": "Mark",
-      "Regex": "^[0-9]+$|^$"
-    },
-        {
       "Rule Name": "Cost is Number",
       "User Message": "Cost must be a number",
       "Categories": [
