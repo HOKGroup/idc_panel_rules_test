@@ -12,7 +12,7 @@
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/Demo",
       "RvtFullPathRegex": 
       [
-        "HOKDEMO\\.rvt$"
+        "Demo\\.rvt$"
       ]
     },
     {
