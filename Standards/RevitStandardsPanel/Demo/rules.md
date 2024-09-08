@@ -83,7 +83,7 @@
       "Rule Name": "Room Occupannt Load Calculation",
       "Categories": ["Rooms"],
       "Parameter Name": "OccupantLoad",
-      "Formula": "{Area}/{OccupantLoadFactor}"
+      "Formula": "{Area}*{OccupantLoadFactor}"
     },
     {
       "Rule Name": "In Place Family Quantity",
