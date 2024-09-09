@@ -25,27 +25,6 @@
   ],
   "Parameter Rules": 
   [
-   {
-      "Rule Name": "Roof Offset",
-      "Categories": ["Roofs"],
-      "Parameter Name": "Base Offset From Level",
-      "Requirement": "IF {Cutoff Offset} > 0 THEN {Base Offset From Level} > 0",
-      "User Message": "IF {Cutoff Offset} > 0 THEN {Base Offset From Level} > 0",
-    },
-    {
-      "Rule Name": "Window Sill Height",
-      "Categories": ["Windows"],
-      "Parameter Name": "Sill Height",
-      "Requirement": "> {Width}",
-      "User Message": "Sill height must greater than width",
-    },
-{
-      "Rule Name": "Door Sill Height",
-      "Categories": ["Doors"],
-      "Parameter Name": "Sill Height",
-      "Requirement": "= 0",
-      "User Message": "Sill height must be 0",
-    },
   {
     "Rule Name": "Set Wall Type Function",
       "Element Classes": [
@@ -101,20 +80,6 @@
       "Parameter Name": "Orientation",
       "From Host Instance": "Orientation",
       "User Message": "The Orientation of an insert must equal the Orientation of its host"
-    },
-    {
-      "Rule Name": "Comments a b c",
-      "Categories": [
-        "Walls"
-      ],
-      "Parameter Name": "Comments",
-      "User Message": "Comments must be a, b, or c",
-      "List Options":
-      [
-        {"name": "a", "description": ""},
-        {"name": "b", "description": ""},
-        {"name": "c", "description": ""}
-      ]
     },
     {
       "Rule Name": "Room Number Dup",
