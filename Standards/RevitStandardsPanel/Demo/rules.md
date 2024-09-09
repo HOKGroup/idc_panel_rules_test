@@ -40,7 +40,7 @@
         "Autodesk.Revit.DB.WallType"
       ],
       "Parameter Name": "Type Name",
-      "Format": "{Function} - {Structural Material} - {Width}",
+      "Format": "{HOK Partition Series}_{HOK Wall Structure}_{Fire Rating}_{HOK Wall Sheathing}_{HOK Wall Description}",
       "User Message": "Type name does not match required format"
   },
   {
