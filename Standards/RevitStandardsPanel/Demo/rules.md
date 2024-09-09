@@ -5,32 +5,33 @@
   "Workset Rules":
   [
     {
-      "Categories": ["Furniture", "Entourage"],
-      "Workset": "Level 1 Fitout",
+      "Categories": ["Rooms", "Furniture"],
+      "Workset": "Level 1 - Roooms and Furniture",
       "Parameters":
       [
-        {"Name": "Level", "Value": "01 - Entry Level"},
-        {"Name": "Auto Assign Workset", "Value": "1"}
-      ]
-    },
-        {
-      "Categories": ["Walls", "Entourage"],
-      "Workset": "Level 1 Fitout",
-      "Parameters":
-      [
-        {"Name": "Level", "Value": "01 - Entry Level"},
+        {"Name": "Level", "Value": "Level 1"},
         {"Name": "Auto Assign Workset", "Value": "1"}
       ]
     },
     {
-      "Categories": ["Furniture", "Entourage"],
-      "Workset": "Level 2 Fitout",
+      "Categories": ["Walls"],
+      "Workset": "Level 1 Walls and Doors",
       "Parameters":
       [
-        {"Name": "Level", "Value": "02 - Floor"},
+        {"Name": "Base Constraint", "Value": "Level 1"},
+        {"Name": "Auto Assign Workset", "Value": "1"}
+      ]
+    },
+        {
+      "Categories": ["Doors"],
+      "Workset": "Level 1 Walls and Doors",
+      "Parameters":
+      [
+        {"Name": "Level", "Value": "Level 1"},
         {"Name": "Auto Assign Workset", "Value": "1"}
       ]
     }
+
   ],
   "Parameter Rules": 
   [
