@@ -13,6 +13,15 @@
         {"Name": "Auto Assign Workset", "Value": "1"}
       ]
     },
+        {
+      "Categories": ["Walls", "Entourage"],
+      "Workset": "Level 1 Fitout",
+      "Parameters":
+      [
+        {"Name": "Level", "Value": "01 - Entry Level"},
+        {"Name": "Auto Assign Workset", "Value": "1"}
+      ]
+    },
     {
       "Categories": ["Furniture", "Entourage"],
       "Workset": "Level 2 Fitout",
@@ -73,13 +82,13 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
-      "Rule Name": "Insert Orientation = Host Insert",
+      "Rule Name": "Host Fire Rating",
       "Categories": [
         "Doors", "Windows"
       ],
-      "Parameter Name": "Orientation",
-      "From Host Instance": "Orientation",
-      "User Message": "The Orientation of an insert must equal the Orientation of its host"
+      "Parameter Name": "HostFireRating",
+      "From Host Instance": "FireRating",
+      "User Message": "Fire Rating Must Match Host"
     },
     {
       "Rule Name": "Room Number Dup",
