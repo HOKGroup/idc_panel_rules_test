@@ -70,13 +70,13 @@
     "Rule Name": "Set Room Occupant",
       "Categories": ["Rooms"],
       "Parameter Name": "Occupant",
-      "Driven Parameters": ["OccupantLoadFactor"],
+      "Driven Parameters": ["OccupantLoadFactor","Occupant_General", "Occupant_Specific_Use"],
       "Key Values": [
-        ["Assembly_Excercise_with_Equip_TX_21", "50"],
-        ["Assembly_Waiting_TX_21", "5"],
-        ["Business_TX_21", "50"],
-        ["Storage_TX_21", "40"],
-        ["Assembly_Excercise_with_out_Equip_TX_21", "15"],
+        ["Assembly_Excercise_with_Equip_TX_21", "50", "Assembly", "Excercise with Equipment"],
+        ["Assembly_Waiting_TX_21", "5", "Assembly", "Waiting"],
+        ["Business_TX_21", "50", "Business", ""],
+        ["Storage_TX_21", "40", "Storage", ""],
+        ["Assembly_Excercise_without_Equip_TX_21", "15", "Assembly", "Excercise without Equipment"],
         ]
     },
     {
