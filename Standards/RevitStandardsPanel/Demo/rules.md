@@ -92,6 +92,13 @@
       "User Message": "Fire Rating Must Match Host"
     },
     {
+      "Rule Name": "Set Quadrant",
+      "Element Classes": [
+        "Autodesk.Revit.DB.FamilyInstance"
+      ],
+      "Custom Code": "SetQuadrant",
+    }
+    {
       "Rule Name": "Room Number Dup",
       "Categories": [
         "Rooms"
