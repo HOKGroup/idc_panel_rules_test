@@ -55,7 +55,7 @@
         ["C", "Wall C", "Floor C", "Ceiling C"]
         ]
     },
-      {
+    {
     "Rule Name": "Set Room Occupant",
       "Categories": ["Rooms"],
       "Parameter Name": "Occupant",
@@ -65,7 +65,7 @@
         ["Assembly_Waiting_TX_21", "5", "Assembly", "Waiting"],
         ["Business_TX_21", "50", "Business", ""],
         ["Storage_TX_21", "40", "Storage", ""],
-        ["Assembly_Excercise_without_Equip_TX_21", "15", "Assembly", "Excercise without Equipment"],
+        ["Assembly_Excercise_without_Equip_TX_21", "15", "Assembly", "Excercise without Equipment"]
         ]
     },
     {
