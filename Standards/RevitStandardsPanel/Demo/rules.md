@@ -83,6 +83,13 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
+      "Rule Name": "Set Quadrant",
+      "Element Classes": [
+        "Autodesk.Revit.DB.FamilyInstance"
+      ],
+      "Custom Code": "SetQuadrant",
+    },
+    {
       "Rule Name": "Host Fire Rating",
       "Categories": [
         "Doors", "Windows"
