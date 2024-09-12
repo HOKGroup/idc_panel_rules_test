@@ -97,7 +97,7 @@
         "Autodesk.Revit.DB.FamilyInstance"
       ],
       "Custom Code": "SetQuadrant",
-    }
+    },
     {
       "Rule Name": "Room Number Dup",
       "Categories": [
