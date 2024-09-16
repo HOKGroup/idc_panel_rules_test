@@ -90,6 +90,13 @@
       "Custom Code": "SetQuadrant",
     },
     {
+      "Rule Name": "Hello World",
+      "Element Classes": [
+        "Autodesk.Revit.DB.FamilyInstance"
+      ],
+      "Custom Code": "HelloWorld",
+    },
+    {
       "Rule Name": "Host Fire Rating",
       "Categories": [
         "Doors", "Windows"
