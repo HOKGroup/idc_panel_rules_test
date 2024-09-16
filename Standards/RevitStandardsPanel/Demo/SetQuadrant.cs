@@ -5,7 +5,7 @@ using Autodesk.Revit.DB;
 
 public class SetQuadrant
 {
-	public void Run(Document doc)
+	public IEnumerable<ElementId> Run(Document doc, List<ElementId> ids)
 	{
 		var instances = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance));
 		var scopeboxes = new FilteredElementCollector(doc).OfCategory(BuiltInCategory.OST_VolumeOfInterest);
@@ -25,5 +25,6 @@ public class SetQuadrant
 				parameter.Set(scopebox.Name);
 			}
 		}
+		return null;
 	}
 }
