@@ -2,7 +2,6 @@
 
 ```json
 {
-  
   "Parameter Rules": 
   [
     {
@@ -10,7 +9,7 @@
       "Element Classes": [
         "Autodesk.Revit.DB.FamilyInstance"
       ],
-      "Custom Code": "HelloWorld",
+      "Custom Code": "HelloWorld"
     }
   ]
 }
