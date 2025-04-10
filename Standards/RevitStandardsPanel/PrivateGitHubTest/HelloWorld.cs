@@ -11,9 +11,12 @@ public class HelloWorld
 	// ids = the added or changed elements, or <null> if running the rule on the entire document
 	public IEnumerable<ElementId> Run(Document doc, List<ElementId> ids)
 	{
-		TaskDialog.Show("Custom Rule", "Hello world from HOK's private rule repo");
+		TaskDialog hwDialog = new TaskDialog("Custom Rule");
+		hwDialog.MainInstruction = "Hello World!";
+		hwDialog.MainContent = "This sample shows how to call a Revit task dialog from a custom rule using HOK's private Github repo.";
+		hwDialog.Show();
 		
 		// return the ids of elements that failed the rule, or <null>
-		return [1];
+		return null;
 	}
 }
