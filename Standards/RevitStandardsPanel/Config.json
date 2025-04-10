@@ -23,6 +23,13 @@
       ]
     },
     {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/PrivateGitHubTest",
+      "RvtFullPathRegex": 
+      [
+        "PrivateGHTest\\.rvt$"
+      ]
+    },
+    {
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/AllOtherFiles",
       "RvtFullPathRegex": 
       [

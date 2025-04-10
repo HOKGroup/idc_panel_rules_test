@@ -1,0 +1,26 @@
+{
+    "Parameter Packs": 
+    [
+        {
+            "Name": "Identity Data",
+            "Category": "Views",
+            "Parameters": 
+            [
+                "View Template", "View Name", "Dependency", "Title on Sheet", "Referencing Sheet", "Referencing Detail"
+            ]
+        }
+    ],
+    "Pack Sets":
+    [
+        {
+            "Name": "HOK Parameter Pack",
+            "Category": "Views",
+            "Show All Other Parameters": false,
+            "Parameter Packs":
+            [
+                "Identity Data"
+            ]
+        }     
+
+    ] 
+}
