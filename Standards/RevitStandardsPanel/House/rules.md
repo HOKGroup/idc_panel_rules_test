@@ -12,8 +12,9 @@
             {"Name": "Level", "Value": "Level 1"},
             {"Name": "Workset Rule Applies", "Value": "1"}
         ],
-      "When Run": ["Manual"],
-      "Disable By Default": "true"
+        "Disable By Default": "true",
+        "When Run": ["Manual"]
+        
     },
         {
         "Categories": ["Furniture", "Entourage"],
