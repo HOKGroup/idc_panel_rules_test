@@ -9,23 +9,31 @@
         "Workset": "Level 1 Stuff",
         "Parameters":
         [
-            {"Name": "Level", "Value": "Level 1"},
-            {"Name": "Workset Rule Applies", "Value": "1"}
+            {"Name": "Level", "Value": "Level 1"}
         ],
         "Disable By Default": "true",
         "When Run": ["Manual"]
     },
-        {
+    {
         "Categories": ["Furniture", "Entourage"],
         "Workset": "Level 2 Stuff",
         "Parameters":
         [
-            {"Name": "Level", "Value": "Level 2"},
-            {"Name": "Workset Rule Applies", "Value": "1"}
+            {"Name": "Level", "Value": "Level 2"}
         ],
         "Disable By Default": "true",
         "When Run": ["Manual"]
     }
+        {
+        "Categories": ["Walls"],
+        "Workset": "Level 1 Walls",
+        "Parameters":
+        [
+            {"Name": "Base Constraint", "Value": "Level 1"}
+        ],
+        "Disable By Default": "true",
+        "When Run": ["Manual"]
+    },
 ],
   "Parameter Rules": 
   [
