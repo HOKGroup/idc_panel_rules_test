@@ -5,7 +5,7 @@
       "RvtFullPathRegex": 
       [
         "IDC_Rule\\.rvt$",
-        "\\\\House\\\\"
+        "\\\\IDC_Rule\\\\"
       ]
     },
     {
