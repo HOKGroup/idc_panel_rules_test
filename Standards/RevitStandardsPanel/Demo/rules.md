@@ -29,7 +29,8 @@
       [
         {"Name": "Level", "Value": "Level 1"},
         {"Name": "Auto Assign Workset", "Value": "1"}
-      ]
+      ],
+      "When Run": ["Manual","Realtime"]
     }
 
   ],
