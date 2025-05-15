@@ -21,7 +21,7 @@
             {"Name": "Level", "Value": "Level 2"}
         ],
         "When Run": ["Manual"]
-    }
+    },
         {
         "Categories": ["Walls"],
         "Workset": "Level 1 Walls",
