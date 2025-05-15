@@ -14,7 +14,6 @@
         ],
         "Disable By Default": "true",
         "When Run": ["Manual"]
-        
     },
         {
         "Categories": ["Furniture", "Entourage"],
@@ -24,6 +23,8 @@
             {"Name": "Level", "Value": "Level 2"},
             {"Name": "Workset Rule Applies", "Value": "1"}
         ],
+        "Disable By Default": "true",
+        "When Run": ["Manual"]
     }
 ],
   "Parameter Rules": 
@@ -42,17 +43,7 @@
         {"name": "c", "description": ""}
       ],
       "When Run": ["Manual"]
-    },
-    {
-      "Rule Name": "Mark is Number",
-      "User Message": "Mark must be a number",
-      "Categories": [
-        "<all>"
-      ],
-      "Disable By Default": "true",
-      "Parameter Name": "Mark",
-      "Regex": "^[0-9]+$"
-    },
+    }
   ]
 }
 ```
