@@ -11,7 +11,6 @@
         [
             {"Name": "Level", "Value": "Level 1"}
         ],
-        "Disable By Default": "true",
         "When Run": ["Manual"]
     },
     {
@@ -21,7 +20,6 @@
         [
             {"Name": "Level", "Value": "Level 2"}
         ],
-        "Disable By Default": "true",
         "When Run": ["Manual"]
     }
         {
@@ -31,7 +29,6 @@
         [
             {"Name": "Base Constraint", "Value": "Level 1"}
         ],
-        "Disable By Default": "true",
         "When Run": ["Manual"]
     },
 ],
