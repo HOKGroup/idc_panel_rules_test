@@ -76,28 +76,6 @@
       "Formula": "{Area}/{OccupantLoadFactor}"
     },
     {
-      "Rule Name": "In Place Family Quantity",
-      "Element Classes": [
-        "Autodesk.Revit.DB.FamilyInstance"
-      ],
-      "Custom Code": "InPlaceFamilyCheck",
-      "User Message": "There are too many In-Place Families in the model."
-    },
-    {
-      "Rule Name": "Set Quadrant",
-      "Element Classes": [
-        "Autodesk.Revit.DB.FamilyInstance"
-      ],
-      "Custom Code": "SetQuadrant",
-    },
-    {
-      "Rule Name": "Hello World",
-      "Element Classes": [
-        "Autodesk.Revit.DB.FamilyInstance"
-      ],
-      "Custom Code": "HelloWorld",
-    },
-    {
       "Rule Name": "Host Fire Rating",
       "Categories": [
         "Doors", "Windows"
