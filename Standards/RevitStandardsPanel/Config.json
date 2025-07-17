@@ -22,6 +22,13 @@
         "Library\\.rvt$"
       ]
     },
+        {
+      "PathToStandardsFiles": "/Standards/RevitStandardsPanel/BBJ_MN_Testing",
+      "RvtFullPathRegex": 
+      [
+        "\\/BBJ_MN_A_.*\\.rvt$"
+      ]
+    },
     {
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/PrivateGitHubTest",
       "RvtFullPathRegex": 
