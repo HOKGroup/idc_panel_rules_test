@@ -33,7 +33,7 @@
       "Element Classes": ["Project Info"],
       "Custom Code": "HelloWorld",
       "User Message": "Hello World!",
-      "When Run": ["Manual"]
+      "When Run": ["Manual", "Open"]
     }
 ]
 }
