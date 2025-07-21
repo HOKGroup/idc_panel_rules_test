@@ -1,8 +1,8 @@
-using System.Collections.Generic;
-using System.Collections;
+//using System.Collections.Generic;
+//using System.Collections;
 //using System.Linq;
-using Autodesk.Revit.DB;
-using Autodesk.Revit.UI;
+//using Autodesk.Revit.DB;
+//using Autodesk.Revit.UI;
 
 // change the name of the class to match the name of the cs file
 public class HelloWorld
