@@ -26,7 +26,7 @@
       "Parameter Name": "Area",
       "Requirement": "IF {dRofus_FunctionNumber} != \"\" THEN {Area} >= 0",
       "User Message": "Area must be zero or greater when dRofus Function Number is set",
-      "When Run": ["Save", "SyncToCentral"]
+      "When Run": ["Save", "SyncToCentral", "Manual"]
     }
 ]
 }
