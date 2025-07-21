@@ -20,7 +20,13 @@
   ],
   "Parameter Rules":
 [
-
+    {
+      "Rule Name": "Area Non-Negative When dRofus Function Number Set",
+      "Categories": ["Rooms"],
+      "Parameter Name": "Area",
+      "Requirement": "IF {dRofus_FunctionNumber} != \"\" THEN {Area} >= 0",
+      "User Message": "Area must be zero or greater when dRofus Function Number is set"
+    }
 ]
 }
 ```
