@@ -1,19 +1,29 @@
 using System.Collections.Generic;
-using System.Linq;
 using Autodesk.Revit.DB;
 
 public class InPlaceFamilyCheck
 {
-	public IEnumerable<ElementId> Run(Document doc, List<ElementId> ids)
-	{
-		var inplaceFamilies = new FilteredElementCollector(doc)
-			.OfClass(typeof(FamilyInstance))
-			.Cast<FamilyInstance>()
-			.Where(q => q.Symbol.Family.IsInPlace);
-			
-		if (inplaceFamilies.Count() < 5)
-			return null;
-		else
-			return inplaceFamilies.Select(q => q.Id);
-	}
+    public IEnumerable<ElementId> Run(Document doc)
+    {
+        List<ElementId> result = new List<ElementId>();
+        int count = 0;
+
+        FilteredElementCollector collector = new FilteredElementCollector(doc);
+        collector.OfClass(typeof(FamilyInstance));
+
+        foreach (Element element in collector)
+        {
+            FamilyInstance instance = element as FamilyInstance;
+            if (instance != null && instance.Symbol.Family.IsInPlace)
+            {
+                count++;
+                result.Add(instance.Id);
+            }
+        }
+
+        if (count < 5)
+            return null;
+        else
+            return result;
+    }
 }
