@@ -27,6 +27,13 @@
       "Requirement": "IF {dRofus_FunctionNumber} > 0 THEN {Area} > 0",
       "User Message": "Area must be zero or greater when dRofus Function Number is set",
       "When Run": ["Save", "SyncToCentral", "Manual"]
+    },
+   {
+      "Rule Name": "Hello World",
+      "Element Classes": ["Project Info"],
+      "Custom Code": "HelloWorld",
+      "User Message": "Hello World!",
+      "When Run": ["Manual"]
     }
 ]
 }
