@@ -18,6 +18,14 @@
     }
 
   ],
-  "Parameter Rules": []
+  "Parameter Rules":
+[
+    {
+      "Rule Name": "In Place Family Quantity Limit",
+      "Element Classes": ["Autodesk.Revit.DB.FamilyInstance"],
+      "Custom Code": "InPlaceFamilyCheck",
+      "User Message": "There are too many In-Place Families in the model."
+    }
+]
 }
 ```
