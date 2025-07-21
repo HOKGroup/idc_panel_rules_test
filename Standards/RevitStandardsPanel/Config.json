@@ -26,7 +26,7 @@
       "PathToStandardsFiles": "/Standards/RevitStandardsPanel/BBJ_MN_Testing",
       "RvtFullPathRegex": 
       [
-        "\\/BBJ_MN_A_.*\\.rvt$"
+        "BBJ_MN_A_.*\\.rvt$"
       ]
     },
     {
