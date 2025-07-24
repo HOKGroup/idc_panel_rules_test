@@ -19,8 +19,16 @@
 
   ],
   "Parameter Rules":
-[
-
-]
+  [
+    {
+    "Rule Name": "Family Name is Compliant",
+    "User Message": "Family name must be compliant with BBJ Standards",
+    "Categories": ["Doors"],
+    "Parameter Name": "Family",
+    "When Run": ["Manual"],
+    "Disable By Default": ["True"],
+    "Regex": "^08_.*"
+    }
+  ]
 }
 ```
