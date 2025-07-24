@@ -20,13 +20,7 @@
   ],
   "Parameter Rules":
 [
-    {
-      "Rule Name": "Hello World",
-      "Element Classes": [
-        "Autodesk.Revit.DB.FamilyInstance"
-      ],
-      "Custom Code": "HelloWorld"
-    }
+
 ]
 }
 ```
