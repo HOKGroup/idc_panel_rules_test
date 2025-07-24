@@ -18,17 +18,22 @@
     }
 
   ],
-  "Parameter Rules":
+  "Parameter Rules": 
   [
-    {
-      "Rule Name": "Mark is Number",
-      "User Message": "Mark must be a number",
+      {
+      "Rule Name": "Comments a b c",
       "Categories": [
-        "Casework"
+        "Walls"
       ],
-      "Parameter Name": "Mark",
-      "Regex": "^[0-9]+$|^$"
+      "Parameter Name": "Comments",
+      "User Message": "Comments must be a, b, or c",
+      "List Options":
+      [
+        {"name": "a", "description": ""},
+        {"name": "b", "description": ""},
+        {"name": "c", "description": ""}
+      ],
+      "When Run": ["Manual"]
     }
   ]
 }
-```
