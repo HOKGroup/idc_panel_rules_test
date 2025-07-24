@@ -20,21 +20,7 @@
   ],
   "Parameter Rules":
 [
-    {
-      "Rule Name": "Area Non-Negative When dRofus Function Number Set",
-      "Categories": ["Rooms"],
-      "Parameter Name": "Area",
-      "Requirement": "IF {dRofus_FunctionNumber} > 0 THEN {Area} > 0",
-      "User Message": "Area must be zero or greater when dRofus Function Number is set",
-      "When Run": ["Save", "SyncToCentral", "Manual"]
-    },
-   {
-      "Rule Name": "Hello World",
-      "Element Classes": ["Project Info"],
-      "Custom Code": "HelloWorld",
-      "User Message": "Hello World!",
-      "When Run": ["Manual", "Open"]
-    }
+
 ]
 }
 ```
