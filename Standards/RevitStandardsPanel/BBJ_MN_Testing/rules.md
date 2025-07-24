@@ -21,6 +21,15 @@
   "Parameter Rules":
   [
     {
+      "Rule Name": "Mark is Number",
+      "User Message": "Mark must be a number",
+      "Categories": [
+        "Casework"
+      ],
+      "Parameter Name": "Mark",
+      "Regex": "^[0-9]+$|^$"
+    },
+    {
     "Rule Name": "Family Name is Compliant",
     "User Message": "Family name must be compliant with BBJ Standards",
     "Categories": ["Doors"],
