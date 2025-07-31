@@ -11,7 +11,7 @@ public class InPlaceFamilyCheck
 			.Cast<FamilyInstance>()
 			.Where(q => q.Symbol.Family.IsInPlace);
 			
-		if (inplaceFamilies.Count() < 5)
+		if (inplaceFamilies.Count() < 25)
 			return null;
 		else
 			return inplaceFamilies.Select(q => q.Id);
