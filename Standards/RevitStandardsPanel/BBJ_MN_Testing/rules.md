@@ -40,7 +40,7 @@
         "Autodesk.Revit.DB.FamilyInstance"
       ],
       "Custom Code": "InPlaceFamilyCheck",
-      "When Run": ["SyncToCentral"],
+      "When Run": ["SyncToCentral", "Save"],
       "User Message": "There are too many In-Place Families in the model."
     }
   ]
