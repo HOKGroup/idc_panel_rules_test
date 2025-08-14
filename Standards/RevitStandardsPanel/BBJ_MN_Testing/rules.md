@@ -35,6 +35,13 @@
       ]
     },
     {
+      "Rule Name": "Family Name Conforms to project standard",
+      "User Message": "Family Name must conform to project standard",
+      "Categories": ["Furniture"],
+      "Parameter Name": "Name",
+      "Regex": "^BBJ_BK_A_HOK_.+"
+    },
+    {
       "Rule Name": "In Place Family Quantity",
       "Element Classes": [
         "Autodesk.Revit.DB.FamilyInstance"
