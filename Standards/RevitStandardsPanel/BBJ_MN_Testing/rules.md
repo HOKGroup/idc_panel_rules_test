@@ -38,7 +38,7 @@
       "Rule Name": "Family Name Conforms to project standard",
       "User Message": "Family Name must conform to project standard",
       "Categories": ["Furniture"],
-      "Parameter Name": "Family",
+      "Parameter Name": "Family Name",
       "Regex": "^BBJ_BK_A_HOK_.+"
     },
     {
