@@ -39,7 +39,8 @@
       "User Message": "Family Name must conform to project standard (BBJ_BK_A_HOK_CATEGORY_NAME_DESCRIPTION_HOST TYPE)",
       "Categories": ["Casework", "Furniture"],
       "Parameter Name": "Family Name",
-      "Regex": "^BBJ_BK_A_HOK_.+"
+      "Regex": "^BBJ_BK_A_HOK_.+",
+      "When Run": ["SyncToCentral", "Save"],
     },
     {
       "Rule Name": "In Place Family Quantity",
