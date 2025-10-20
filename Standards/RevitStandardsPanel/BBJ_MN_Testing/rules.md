@@ -43,10 +43,10 @@
       "When Run": ["SyncToCentral", "Save"]
     },
     {
-      "Rule Name": "Room Name Dup",
+      "Rule Name": "Room Number Dup",
       "Categories": ["Rooms"],
       "User Message": "Room Number cannot duplicate an existing value",
-      "Parameter Name": "Name",
+      "Parameter Name": "Number",
       "Prevent Duplicates": "True"
     },
     {
