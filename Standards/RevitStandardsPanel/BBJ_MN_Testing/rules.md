@@ -43,6 +43,13 @@
       "When Run": ["SyncToCentral", "Save"],
     },
     {
+      "Rule Name": "Room Number Dup",
+      "Categories": ["Rooms"],
+      "User Message": "Room Number cannot duplicate an existing value",
+      "Parameter Name": "Number",
+      "Prevent Duplicates": "True"
+    },
+    {
       "Rule Name": "In Place Family Quantity",
       "Element Classes": [
         "Autodesk.Revit.DB.FamilyInstance"
