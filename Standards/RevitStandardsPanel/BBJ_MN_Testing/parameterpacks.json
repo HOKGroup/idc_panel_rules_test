@@ -98,18 +98,6 @@
             ],
             "URL": "https://help.autodesk.com/view/RVT/2023/ENU/?guid=GUID-550F4B3E-7D49-4A4F-BEC7-4077D5B9FC85",
             "PDF":  "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-        },
-        {
-            "Name": "Room Tools 1",
-            "Category": "Rooms",
-            "Parameters":
-            [    
-                "Occupancy", "Name", "Number", "Room Style"
-            ],
-            "Custom Tools":
-            [
-                "Place Furniture Instance In Room"
-            ]
         }
     ],
     "Pack Sets":
