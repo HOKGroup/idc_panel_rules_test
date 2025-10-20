@@ -40,15 +40,15 @@
       "Categories": ["Casework", "Furniture"],
       "Parameter Name": "Family Name",
       "Regex": "^BBJ_BK_A_HOK_.+",
-      "When Run": ["SyncToCentral", "Save"],
+      "When Run": ["SyncToCentral", "Save"]
     },
     {
       "Rule Name": "Room Number Dup",
       "Categories": ["Rooms"],
       "User Message": "Room Number cannot duplicate an existing value",
       "Parameter Name": "Name",
-      "Prevent Duplicates": "True"
-      "When Run": ["SyncToCentral", "Save", "Manual"],
+      "Prevent Duplicates": "True",
+      "When Run": ["SyncToCentral", "Save", "Manual"]
     },
     {
       "Rule Name": "In Place Family Quantity",
