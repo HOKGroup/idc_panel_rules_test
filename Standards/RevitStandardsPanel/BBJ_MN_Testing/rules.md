@@ -43,12 +43,11 @@
       "When Run": ["SyncToCentral", "Save"]
     },
     {
-      "Rule Name": "Room Number Dup",
+      "Rule Name": "Room Name Dup",
       "Categories": ["Rooms"],
       "User Message": "Room Number cannot duplicate an existing value",
       "Parameter Name": "Name",
-      "Prevent Duplicates": "True",
-      "When Run": ["SyncToCentral", "Save", "Manual"]
+      "Prevent Duplicates": "True"
     },
     {
       "Rule Name": "In Place Family Quantity",
