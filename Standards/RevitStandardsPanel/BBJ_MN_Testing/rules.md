@@ -43,12 +43,20 @@
       "When Run": ["SyncToCentral", "Save"],
     },
     {
-      "Rule Name": "Unset Appears In Sheet List for Coordination Sheets",
-      "Categories": ["Sheets"],
-      "Condition": "{Sheet Group} == '_COORDINATION'",
-      "Parameter Name": "Appears In Sheet List",
-      "Expected Value": false,
-      "RunMode": "Manual"
+      "Rule Name": "Room Number Dup",
+      "Categories": ["Rooms"],
+      "User Message": "Room Number cannot duplicate an existing value",
+      "Parameter Name": "Number",
+      "Prevent Duplicates": "True"
+    }
+    {
+      "Rule Name": "Coordination Sheets Not in Print Set",
+      "Element Classes": [
+        "Autodesk.Revit.DB.FamilyInstance"
+      ],
+      "Custom Code": "CoordinationSheetsNotInPrintSet,
+      "When Run": ["SyncToCentral", "Manual"],
+      "User Message": "This sheet will not print"
     },
     {
       "Rule Name": "In Place Family Quantity",
