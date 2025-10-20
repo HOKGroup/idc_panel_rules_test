@@ -59,9 +59,9 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
-      "Rule Name": "Sheet Group",
+      "Rule Name": "Non-Documentation Sheets",
       "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
-      "Custom Code": "SheetGroup",
+      "Custom Code": "NonDocumentationSheets",
       "User Message": "Include in Print Set unchecked if Sheet Group set to _COORDINATION"
     }
   ]
