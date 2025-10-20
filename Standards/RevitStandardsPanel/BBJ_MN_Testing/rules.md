@@ -57,6 +57,12 @@
       "Custom Code": "InPlaceFamilyCheck",
       "When Run": ["SyncToCentral", "Save"],
       "User Message": "There are too many In-Place Families in the model."
+    },
+    {
+      "Rule Name": "Sheet Group",
+      "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
+      "Custom Code": "SheetGroup",
+      "User Message": "Include in Print Set unchecked if Sheet Group set to _COORDINATION"
     }
   ]
 }
