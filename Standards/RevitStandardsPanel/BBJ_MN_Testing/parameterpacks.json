@@ -193,14 +193,6 @@
             [
                 "Wall Identity"
             ]
-        },
-        {
-            "Name": "Room Stuff",
-            "Category": "Rooms",
-            "Parameter Packs":
-            [
-                "Room Tools 1"
-            ]
         }
     ] 
 }
