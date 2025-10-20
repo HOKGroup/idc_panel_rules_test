@@ -46,7 +46,7 @@
       "Rule Name": "Room Number Dup",
       "Categories": ["Rooms"],
       "User Message": "Room Number cannot duplicate an existing value",
-      "Parameter Name": "Number",
+      "Parameter Name": "Name",
       "Prevent Duplicates": "True"
     },
     {
