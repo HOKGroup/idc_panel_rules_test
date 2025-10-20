@@ -43,6 +43,13 @@
       "When Run": ["SyncToCentral", "Save"],
     },
     {
+      "Rule Name": "Coordination Sheets Must Not Appear In Sheet List",
+      "User Message": "Sheets in the '_COORDINATION' group must have 'Appears In Sheet List' unchecked.",
+      "Categories": ["Sheets"],
+      "Formula": "({Sheet Group} == '_COORDINATION') ? false : {Appears In Sheet List}",
+      "When Run": ["Manual"]
+    },
+    {
       "Rule Name": "In Place Family Quantity",
       "Element Classes": [
         "Autodesk.Revit.DB.FamilyInstance"
