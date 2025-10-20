@@ -48,6 +48,7 @@
       "User Message": "Room Number cannot duplicate an existing value",
       "Parameter Name": "Name",
       "Prevent Duplicates": "True"
+      "When Run": ["SyncToCentral", "Save", "Manual"],
     },
     {
       "Rule Name": "In Place Family Quantity",
