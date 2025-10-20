@@ -43,11 +43,12 @@
       "When Run": ["SyncToCentral", "Save"],
     },
     {
-      "Rule Name": "Coordination Sheets Must Not Appear In Sheet List",
-      "User Message": "Sheets in the '_COORDINATION' group must have 'Appears In Sheet List' unchecked.",
+      "Rule Name": "Unset Appears In Sheet List for Coordination Sheets",
       "Categories": ["Sheets"],
-      "Formula": "({Sheet Group} == '_COORDINATION') ? false : {Appears In Sheet List}",
-      "When Run": ["Manual"]
+      "Condition": "{Sheet Group} == '_COORDINATION'",
+      "Parameter Name": "Appears In Sheet List",
+      "Expected Value": false,
+      "RunMode": "Manual"
     },
     {
       "Rule Name": "In Place Family Quantity",
