@@ -63,12 +63,6 @@
       "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
       "Custom Code": "NonDocumentationSheets",
       "User Message": "Include in Print Set unchecked if Sheet Group set to _COORDINATION"
-    },
-    {
-      "Rule Name": "Prevent dRofus Function Number Duplicates in Rooms",
-      "Element Classes": ["Autodesk.Revit.DB.SpatialElement"],
-      "Custom Code": "PreventFunctNumDups",
-      "User Message": "All function number values in rooms must be unique.  This room's value is now erased."
     }
   ]
 }
