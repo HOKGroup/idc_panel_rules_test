@@ -5,9 +5,10 @@ using Autodesk.Revit.UI;
 
 namespace IDC.Rules
 {
-    public class PreventFunctNumDups
+    // Make sure class is public
+    public class PreventFunctNumDups : IRule  // <-- implement the expected interface
     {
-        public static void Execute(Document doc, ElementId changedElementId)
+        public void Execute(Document doc, ElementId changedElementId)
         {
             try
             {
@@ -15,20 +16,17 @@ namespace IDC.Rules
                 if (changedElem == null)
                     return;
 
-                // Only run on Rooms
                 if (!(changedElem is SpatialElement room) || room.Category == null || room.Category.Name != "Rooms")
                     return;
 
-                // Get the Function Number parameter
                 Parameter funcNumParam = room.LookupParameter("dRofus_FunctionNumber");
                 if (funcNumParam == null)
                     return;
 
                 string funcNum = funcNumParam.AsString();
                 if (string.IsNullOrWhiteSpace(funcNum))
-                    return; // No value, nothing to check
+                    return;
 
-                // Collect all other rooms in the document
                 FilteredElementCollector collector = new FilteredElementCollector(doc)
                     .OfCategory(BuiltInCategory.OST_Rooms)
                     .WhereElementIsNotElementType();
@@ -42,7 +40,6 @@ namespace IDC.Rules
                         return p != null && string.Equals(p.AsString(), funcNum, StringComparison.OrdinalIgnoreCase);
                     });
 
-                // If duplicate found, clear the value
                 if (duplicateFound)
                 {
                     using (Transaction tx = new Transaction(doc, "Clear duplicate Function Number"))
