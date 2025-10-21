@@ -43,10 +43,10 @@
       "When Run": ["SyncToCentral", "Save"]
     },
     {
-      "Rule Name": "Room Number Dup",
+      "Rule Name": "Room dRofus_FunctionNumber Dup",
       "Categories": ["Rooms"],
-      "User Message": "Room Number cannot duplicate an existing value",
-      "Parameter Name": "Name",
+      "User Message": "dRoufs Function Number cannot duplicate an existing value",
+      "Parameter Name": "dRofus_FunctionNumber",
       "Prevent Duplicates": "True"
     },
     {
