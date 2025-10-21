@@ -59,13 +59,6 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
-      "Rule Name": "Room Number Dup",
-      "Categories": ["Rooms"],
-      "User Message": "Room Number cannot duplicate an existing value",
-      "Parameter Name": "Number",
-      "Prevent Duplicates": "True"
-    },
-    {
       "Rule Name": "Non-Documentation Sheets",
       "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
       "Custom Code": "NonDocumentationSheets",
