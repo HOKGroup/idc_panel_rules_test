@@ -47,7 +47,7 @@
       "Categories": ["Rooms"],
       "User Message": "dRoufs Function Number cannot duplicate an existing value",
       "Parameter Name": "dRofus_FunctionNumber",
-      "Prevent Duplicates": "True"
+      "Prevent Duplicates": "False"
     },
     {
       "Rule Name": "In Place Family Quantity",
