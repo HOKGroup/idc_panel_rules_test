@@ -45,7 +45,7 @@
     {
       "Rule Name": "Room dRofus_FunctionNumber Dup",
       "Categories": ["Rooms"],
-      "User Message": "dRoufs Function Number cannot duplicate an existing value",
+      "User Message": "dRoufs Function Number cannot duplicate an existing value.  Make up a unique value which will be overwritten by dRofus later.",
       "Parameter Name": "dRofus_FunctionNumber",
       "Prevent Duplicates": "False"
     },
