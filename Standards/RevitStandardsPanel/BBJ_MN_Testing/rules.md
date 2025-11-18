@@ -40,7 +40,7 @@
       "Categories": ["Casework", "Furniture"],
       "Parameter Name": "Family Name",
       "Regex": "^BBJ_BK_A_HOK_.+",
-      "When Run": ["SyncToCentral", "Save"]
+      "When Run": ["Realtime", "Manual"]
     },
     {
       "Rule Name": "Room dRofus_FunctionNumber Dup",
