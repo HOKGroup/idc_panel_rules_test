@@ -64,7 +64,7 @@
         "Autodesk.Revit.DB.Group"
       ],
       "Custom Code": "LockedGroupEditCheck",
-      "When Run": ["SyncToCentral", "Save"],
+      "When Run": ["SyncToCentral", "Save", "Manual"],
       "User Message": "You may not edit this group. Contact the owner of this group for changes."
     },
     {
