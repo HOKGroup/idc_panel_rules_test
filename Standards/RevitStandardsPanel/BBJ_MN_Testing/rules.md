@@ -59,6 +59,15 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
+      "Rule Name": "LimitGroupEditors",
+      "Element Classes": [
+        "Autodesk.Revit.DB.Group"
+      ],
+      "Custom Code": "LockedGroupEditCheck",
+      "When Run": ["SyncToCentral", "Save"],
+      "User Message": "You may not edit this group. Contact the owner of this group for changes."
+    },
+    {
       "Rule Name": "Non-Documentation Sheets",
       "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
       "Custom Code": "NonDocumentationSheets",
