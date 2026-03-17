@@ -21,23 +21,9 @@
   "Parameter Rules": 
   [
     {
-      "Rule Name": "Comments Rule For All Other Files",
-      "Categories": [
-        "Walls"
-      ],
-      "Parameter Name": "Comments",
-      "User Message": "Comments must be 1 2 or 3",
-      "List Options":
-      [
-        {"name": "1", "description": ""},
-        {"name": "2", "description": ""},
-        {"name": "3", "description": ""}
-      ]
-    },
-    {
       "Rule Name": "Conforming Family Name",
       "User Message": "Family Name must conform to project standard (BBJ_MN_A_HOK_CATEGORY_NAME_DESCRIPTION_HOST TYPE)",
-      "Categories": ["Casework", "Furniture"],
+      "Categories": ["Casework", "Furniture", "Specialty Equipment"],
       "Parameter Name": "Family Name",
       "Regex": "^BBJ_MN_A_HOK_.+",
       "When Run": ["Realtime", "Manual"]
