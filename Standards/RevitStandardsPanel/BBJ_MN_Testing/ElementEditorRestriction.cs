@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Autodesk.Revit.DB;
 
-public class LimitWallJointEditors  // ← matches filename
+public class ElementEditorRestriction  // ← matches filename
 {
     // ---------------------------------------------------------------
     // TESTING TOGGLE
