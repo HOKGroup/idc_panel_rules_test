@@ -16,12 +16,13 @@ public class RestrictedCategoryEditor
     // the username below. Flip back to false for production.
     // ---------------------------------------------------------------
     private const bool USE_HARDCODED_USER = true;
-    private const string HARDCODED_TEST_USER = "t.lane"; // ← your Autodesk login
+    private const string HARDCODED_TEST_USER = "trey.johnson@hok.com"; // ← your Autodesk login
 
     // ---------------------------------------------------------------
     // Configuration
     // ---------------------------------------------------------------
-    private static readonly BuiltInCategory RestrictedCategory = BuiltInCategory.OST_Walls;
+    private const string RestrictedFamilyName = "Masonry Control Joint";
+    private static readonly BuiltInCategory RestrictedCategory = BuiltInCategory.OST_ExpansionJoints;
     private const string AllowlistFileName = "RestrictedCategoryEditorAllowlist.csv";
 
     // ---------------------------------------------------------------
@@ -40,7 +41,7 @@ public class RestrictedCategoryEditor
         if (allowlist.Contains(currentUser))
             return Enumerable.Empty<ElementId>();
 
-        // 4. Determine which changed elements belong to the restricted category.
+        // 4. Determine which changed elements belong to the restricted family.
         var violating = new List<ElementId>();
 
         var idsToCheck = ids ?? new FilteredElementCollector(doc)
@@ -54,11 +55,14 @@ public class RestrictedCategoryEditor
             var element = doc.GetElement(id);
             if (element == null) continue;
 
-            if (element.Category != null &&
-                element.Category.Id.IntegerValue == (int)RestrictedCategory)
-            {
+            // Must be in the correct category AND belong to the restricted family.
+            if (element.Category == null ||
+                element.Category.Id.IntegerValue != (int)RestrictedCategory)
+                continue;
+
+            var fi = element as FamilyInstance;
+            if (fi?.Symbol?.FamilyName == RestrictedFamilyName)
                 violating.Add(id);
-            }
         }
 
         return violating;
