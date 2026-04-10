@@ -47,7 +47,7 @@
     {
       "Rule Name": "Editor Restriction - Masonry Control Joints",
       "Categories": ["Expansion Joints"],
-      "Custom Code": "ElementEditorRestriction",
+      "Custom Code": "ElementEditorRestriction - Masonry Control Joint",
       "When Run": ["Realtime"],
       "User Message": "You can not edit this element.  Contact your BIM Coordinator to make this change."
     },
