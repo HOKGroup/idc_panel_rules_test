@@ -50,7 +50,7 @@
         "Autodesk.Revit.DB.FamilyInstance"
       ],
       "Custom Code": "LimitWallJointEditors",
-      "When Run": ["SyncToCentral", "Save", "Manual"],
+      "When Run": ["Realtime", "Save", "Manual"],
       "User Message": "You can not edit this element"
     },
     {
