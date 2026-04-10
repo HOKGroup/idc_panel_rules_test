@@ -16,7 +16,7 @@ public class RestrictedCategoryEditor
     // the username below. Flip back to false for production.
     // ---------------------------------------------------------------
     private const bool USE_HARDCODED_USER = true;
-    private const string HARDCODED_TEST_USER = "trey.johnson@hok.com"; // ← your Autodesk login
+    private const string HARDCODED_TEST_USER = "t.lane"; // ← your Autodesk login
 
     // ---------------------------------------------------------------
     // Configuration
