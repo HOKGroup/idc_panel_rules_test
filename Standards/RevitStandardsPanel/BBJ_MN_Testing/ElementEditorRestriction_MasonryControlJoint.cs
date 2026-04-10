@@ -12,7 +12,7 @@ public class ElementEditorRestriction_MasonryControlJoint  // ← matches filena
     // TESTING TOGGLE
     // ---------------------------------------------------------------
     private const bool USE_HARDCODED_USER = false;
-    private const string HARDCODED_TEST_USER = "zt.lane";
+    private const string HARDCODED_TEST_USER = "t.lane";
 
     // ---------------------------------------------------------------
     // Configuration
