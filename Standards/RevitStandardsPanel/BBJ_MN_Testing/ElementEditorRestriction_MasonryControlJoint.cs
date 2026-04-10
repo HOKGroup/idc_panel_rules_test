@@ -19,7 +19,7 @@ public class ElementEditorRestriction_MasonryControlJoint  // ← matches filena
     // ---------------------------------------------------------------
     private const string RestrictedFamilyName = "Masonry Control Joint";
     private static readonly BuiltInCategory RestrictedCategory = BuiltInCategory.OST_ExpansionJoints;
-    private const string AllowlistFileName = "RestrictedCategoryEditorAllowlist.csv";
+    private const string AllowlistFileName = "ElementEditorRestriction_MasonryControlJoints_Editors.csv";
 
     // ---------------------------------------------------------------
 
