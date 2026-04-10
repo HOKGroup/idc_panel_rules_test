@@ -45,6 +45,15 @@
       "User Message": "There are too many In-Place Families in the model."
     },
     {
+      "Rule Name": "Limit CMU Control Joint Editors",
+      "Element Classes": [
+        "Autodesk.Revit.DB.FamilyInstance"
+      ],
+      "Custom Code": "LimitWallJointEditors",
+      "When Run": ["SyncToCentral", "Save", "Manual"],
+      "User Message": "You can not edit this element"
+    },
+    {
       "Rule Name": "Non-Documentation Sheets",
       "Element Classes": ["Autodesk.Revit.DB.ViewSheet"],
       "Custom Code": "NonDocumentationSheets",
