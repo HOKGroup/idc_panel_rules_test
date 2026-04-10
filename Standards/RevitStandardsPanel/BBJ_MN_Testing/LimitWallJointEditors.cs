@@ -1,7 +1,6 @@
 // RestrictedCategoryEditor.cs
 // Place in the same folder as rules.md
 // Blocks edits to elements of a specified category by anyone not on the allowed-editors list.
-// The allowed usernames are read from a companion CSV: RestrictedCategoryEditorAllowlist.csv
 
 using System;
 using System.Collections.Generic;
@@ -12,42 +11,38 @@ using Autodesk.Revit.DB;
 public class RestrictedCategoryEditor
 {
     // ---------------------------------------------------------------
-    // Configuration — adjust these two values to match your use case.
+    // TESTING TOGGLE
+    // Set USE_HARDCODED_USER = true to bypass the CSV and test with
+    // the username below. Flip back to false for production.
     // ---------------------------------------------------------------
+    private const bool USE_HARDCODED_USER = true;
+    private const string HARDCODED_TEST_USER = "trey.johnson@hok.com"; // ← your Autodesk login
 
-    // Revit built-in category you want to restrict.
-    // Common examples:
-    //   BuiltInCategory.OST_Walls
-    //   BuiltInCategory.OST_StructuralColumns
-    //   BuiltInCategory.OST_MEPSpaces
-    //   BuiltInCategory.OST_Rooms
+    // ---------------------------------------------------------------
+    // Configuration
+    // ---------------------------------------------------------------
     private static readonly BuiltInCategory RestrictedCategory = BuiltInCategory.OST_Walls;
-
-    // Name of the CSV file (one Autodesk username per line, no header)
-    // that lives alongside this .cs file in the standards folder.
     private const string AllowlistFileName = "RestrictedCategoryEditorAllowlist.csv";
 
     // ---------------------------------------------------------------
 
     public IEnumerable<ElementId> Run(Document doc, List<ElementId> ids)
     {
-        // 1. Resolve the allowlist file path relative to this script's location.
-        //    The addin compiles .cs files from the standards folder, so we use
-        //    the document path as an anchor when running in "real-time" mode,
-        //    and fall back to a path beside the temp-compiled assembly.
-        var allowlist = LoadAllowlist(doc);
+        // 1. Build the allowlist — either hardcoded or from CSV.
+        var allowlist = USE_HARDCODED_USER
+            ? new HashSet<string>(StringComparer.OrdinalIgnoreCase) { HARDCODED_TEST_USER.Trim().ToLowerInvariant() }
+            : LoadAllowlist(doc);
 
-        // 2. Get the current Autodesk user login name (lowercase for comparison).
+        // 2. Get the current Autodesk user login name.
         var currentUser = (doc.Application.Username ?? string.Empty).Trim().ToLowerInvariant();
 
         // 3. If the current user is on the allowlist, nothing to flag.
         if (allowlist.Contains(currentUser))
             return Enumerable.Empty<ElementId>();
 
-        // 4. Determine which of the changed elements belong to the restricted category.
+        // 4. Determine which changed elements belong to the restricted category.
         var violating = new List<ElementId>();
 
-        // When ids is null the rule was triggered via the "Run" button — check all.
         var idsToCheck = ids ?? new FilteredElementCollector(doc)
                                     .OfCategory(RestrictedCategory)
                                     .WhereElementIsNotElementType()
@@ -59,7 +54,6 @@ public class RestrictedCategoryEditor
             var element = doc.GetElement(id);
             if (element == null) continue;
 
-            // Match by built-in category.
             if (element.Category != null &&
                 element.Category.Id.IntegerValue == (int)RestrictedCategory)
             {
@@ -91,10 +85,6 @@ public class RestrictedCategoryEditor
 
     private static string ResolveStandardsFolder(Document doc)
     {
-        // The addin compiles custom .cs files into a temp location, but it passes
-        // the Document so we can navigate from the model's own path.  A reliable
-        // fallback is to look next to the executing assembly — adjust if your
-        // deployment differs.
         try
         {
             var assemblyPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
@@ -107,7 +97,6 @@ public class RestrictedCategoryEditor
         }
         catch { /* ignore */ }
 
-        // Fallback: same directory as the Revit model file.
         if (!string.IsNullOrEmpty(doc.PathName))
             return Path.GetDirectoryName(doc.PathName) ?? string.Empty;
 
