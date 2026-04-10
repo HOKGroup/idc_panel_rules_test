@@ -12,7 +12,7 @@ public class ElementEditorRestriction  // ← matches filename
     // TESTING TOGGLE
     // ---------------------------------------------------------------
     private const bool USE_HARDCODED_USER = true;
-    private const string HARDCODED_TEST_USER = "t.lane";
+    private const string HARDCODED_TEST_USER = "zt.lane";
 
     // ---------------------------------------------------------------
     // Configuration
