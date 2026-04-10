@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Autodesk.Revit.DB;
 
-public class ElementEditorRestriction  // ← matches filename
+public class ElementEditorRestriction_MasonryControlJoint  // ← matches filename
 {
     // ---------------------------------------------------------------
     // TESTING TOGGLE
